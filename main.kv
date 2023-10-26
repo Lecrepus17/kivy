@@ -1,9 +1,10 @@
-BoxLayout:
+<Main1>:
     orientation: 'vertical'
+    padding: 20
 
-    Label:
-        text: 'This is the main screen'
-
+    BoxLayout:
+        TextInput:
+            id: texto
     Button:
-        text: 'Switch to Another Screen'
-        on_press: app.root.current = 'another'
+        text: 'adicionar'
+        on_release: root.adcionar()

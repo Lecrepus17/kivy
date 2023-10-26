@@ -15,10 +15,10 @@ class MeuAplicativo(App):
             host = "localhost",
             user = "root",
             passwd = "",
-            database = "python17",
+            database = "python171",
         )
         c = mydb.cursor()
-        c.execute("CREATE DATABASE IF NOT EXISTS python17")
+        c.execute("CREATE DATABASE IF NOT EXISTS python171")
 
         c.execute("""CREATE TABLE if not exists clientes(
             name VARCHAR(50))
@@ -32,7 +32,7 @@ class MeuAplicativo(App):
             host = "localhost",
             user = "root",
             passwd = "",
-            database = "python17",
+            database = "python171",
         )
         c = mydb.cursor()
         sql_command = "INSERT INTO clientes (name) VALUES (%s)"
@@ -45,7 +45,7 @@ class MeuAplicativo(App):
             host = "localhost",
             user = "root",
             passwd = "",
-            database = "python17",
+            database = "python171",
         )
         c = mydb.cursor()
         c.execute("SELECT * FROM clientes")

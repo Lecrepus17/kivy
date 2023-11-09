@@ -4,62 +4,45 @@
         padding: 20
 
         Label:
-            text: "Tela 1"
+            text: "Formulário"
             font_size: 32
             orientation: 'vertical'
-        Label:
-            text: 'insira o preço e peso em gramas'
-            fot_size: 20
-            text_size: self.size
         BoxLayout:
             Label:
-                text: 'produto1'
-            Label:
-                text: 'Kg ou L'
+                text: 'Nome'
         BoxLayout:
-            spacing: 10
             TextInput:
-                id: pr1
-                multiline: False
-                input_filter: 'float'
-            TextInput:
-                id: ps1
-                multiline: False
-                input_filter: 'float'
-            Label:
-                id: p1
-                fot_size: 20
+                id: name
         BoxLayout:
             Label:
-                text: 'produto1'
-            Label:
-                text: 'Kg ou L'
+                text: 'Texto'
         BoxLayout:
-            spacing: 10
             TextInput:
-                id: pr2
-                multiline: False
-                input_filter: 'float'
-            TextInput:
-                id: ps2
-                multiline: False
-                input_filter: 'float'
-            Label:
-                id: p2
-                fot_size: 20
+                id: text
         BoxLayout:
             spacing: 10
             Label:
-                text: 'Diferença:'
+                text: 'Nome:'
                 font_size: 20
             Label:
-                id: dif
+                id: name_final
+                font_size: 20
+        BoxLayout:
+            spacing: 10
+            Label:
+                text: 'Texto:'
+                font_size: 20
+            Label:
+                id: text_final
                 font_size: 20
         Button:
-            text: 'COMPARAR'
-            on_release: root.calc()
+            text: 'Salvar'
+            on_release: root.save()
 
         Button:
-            text: "Ir para Tela 2"
+            text: "Calculadora"
             on_release: app.switch_screen("main2", "left")
+        Button:
+            text: "Moedas"
+            on_release: app.switch_screen("main3", "left")
 

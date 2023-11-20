@@ -2,7 +2,8 @@
     BoxLayout:
         orientation: 'vertical'
         padding: 20
-
+        spacing: 10
+        
         Label:
             id: display
             text: "0"
@@ -78,5 +79,6 @@
                 on_press: root.update_display('+')
         Button:
             text: "Formulário"
+            size_hint_y: 0.2
             on_release: app.switch_screen("main1", "right")
 

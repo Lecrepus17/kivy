@@ -4,6 +4,7 @@ from kivy.core.window import Window
 from pythons.Main1 import Main1
 from pythons.Main2 import Main2
 from pythons.Main3 import Main3
+from pythons.List import List
 from pythons.custom_transitions import CustomSlideTransition
 
 # Configuração da janela principal
@@ -19,6 +20,7 @@ class MainApp(App):
         sm.add_widget(Main1(name='main1'))
         sm.add_widget(Main2(name='main2'))
         sm.add_widget(Main3(name='main3'))
+        sm.add_widget(List(name='list'))
 
         return sm
 

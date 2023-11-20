@@ -47,6 +47,10 @@
             on_release: root.save()
 
         Button:
+            text: "Lista"
+            on_release: app.switch_screen("list", "left")
+
+        Button:
             text: "Calculadora"
             on_release: app.switch_screen("main2", "left")
 

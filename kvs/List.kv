@@ -1,0 +1,20 @@
+<List>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+
+        RecycleView:
+            id: rv_entries
+            viewclass: 'Label'
+            data: []
+            RecycleBoxLayout:
+                default_size: None, dp(56)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+                orientation: 'vertical'
+
+        Button:
+            text: "Formulário"
+            size_hint_y: 0.2
+            on_release: app.switch_screen("main1", "right")

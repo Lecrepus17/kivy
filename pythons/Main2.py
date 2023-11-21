@@ -19,7 +19,7 @@ class Main2(Screen):
     def calculate(self):
         # Tenta calcular a expressão e exibe o resultado ou um erro
         try:
-            result = eval(self.expression)
+            result = round(eval(self.expression), 3)
             self.display.text = str(result)
             self.expression = str(result)
         except Exception as e:

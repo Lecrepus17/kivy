@@ -4,47 +4,10 @@
         padding: 20
 
         Label:
-            text: "Formulário"
+            text: "Lista de Compras"
             font_size: 32
             orientation: 'vertical'
 
-        BoxLayout:
-            Label:
-                text: 'Nome'
-
-        BoxLayout:
-            TextInput:
-                id: name
-
-        BoxLayout:
-            Label:
-                text: 'Texto'
-
-        BoxLayout:
-            TextInput:
-                id: text
-
-        BoxLayout:
-            spacing: 10
-            Label:
-                text: 'Nome:'
-                font_size: 20
-            Label:
-                id: name_final
-                font_size: 20
-
-        BoxLayout:
-            spacing: 10
-            Label:
-                text: 'Texto:'
-                font_size: 20
-            Label:
-                id: text_final
-                font_size: 20
-
-        Button:
-            text: 'Salvar'
-            on_release: root.save()
 
         Button:
             text: "Lista"
